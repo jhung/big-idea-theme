@@ -10,7 +10,6 @@ License URI:
 Text Domain: a11y
 Tags: accessibility
 */
-/* foo */
 @font-face {
   font-family: "Muli";
   src: url("fonts/Muli-Regular.ttf") format("truetype");
@@ -113,6 +112,7 @@ html {
 .fl-prefsEditor-separatedPanel .fl-panelBar .fl-prefsEditor-showHide {
   min-width: 7em;
 }
+
 /* Site Header */
 .a11y-site-header {
   background-color: #fff;
@@ -230,8 +230,8 @@ html {
 }
 /* Site Tagline (appears on front page only) */
 .a11y-site-tagline {
-  background-color: #274d5d;
-  background: url("./images/pen-idea-bulb-paper.png") 0 -3rem/100% auto no-repeat, #274d5d;
+  background-color: #274D5D;
+  background: url("./images/pen-idea-bulb-paper.png") 0 -3rem/100% auto no-repeat, #274D5D;
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -340,7 +340,7 @@ html {
 /* Footer */
 .a11y-site-footer {
   padding: 1rem;
-  background-color: #00303c;
+  background-color: #006274;
   color: #fff;
 }
 .a11y-site-footer a {
@@ -705,4 +705,8 @@ html {
     background-size: 14% auto;
     background-repeat: no-repeat;
   }
+}
+
+span.fa {
+font: normal normal normal 3rem FontAwesome !important; /* Fix a bug where UIO was replacing icon with adjuster font */
 }
