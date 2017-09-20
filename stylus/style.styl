@@ -87,7 +87,7 @@ front-footer-link-hover ?= #006274;
 front-footer-link-focus ?= 0.2rem solid #fff;
 
 /* Sub Page Footer */
-footer-background ?= #00303C;
+footer-background ?= #006274;
 footer-color ?= #fff;
 footer-link-color ?= #fff;
 footer-link-hover-background ?= #fff;
@@ -182,6 +182,11 @@ apply-contrast-colours(foreground background fileSuffix) {
     margin: 0 auto;
     display: block;
     height: 2.2rem;
+}
+
+/* Styles specific for Font Awesome */
+span.fa {
+    font: normal normal normal 3rem FontAwesome !important; /* Fix a bug where UIO was replacing icon with adjuster font */
 }
 
 /* General styles */

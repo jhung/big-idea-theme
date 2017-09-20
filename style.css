@@ -1,14 +1,14 @@
 /*
-Theme Name: a11y-0.0.3
+Theme Name: BIG IDeA Theme
 Theme URI:
 Author: Floe Project
 Author URI: http://floeproject.org/
-Description: Accessible theme <code>a11y</code>
-Version: 0.0.3
+Description: Accessible theme for BIG IDeA
+Version: 0.0.1
 License:
 License URI:
-Text Domain: a11y
-Tags: accessibility
+Text Domain:
+Tags: accessibility, BIG IDeA
 */
 @font-face {
   font-family: "Muli";
@@ -270,8 +270,16 @@ html {
 }
 .a11y-front-panel h1,
 .a11y-front-panel section {
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.5rem 1.5rem 1.5rem;
 }
+
+/* Styles for Social media feeds */
+.bi-social-feeds .a11y-front-panel:focus,
+.bi-social-feeds .a11y-front-panel:hover {
+  border-color: #eceded;
+}
+
+
 /* Site Sidebar (appears on all other pages, except front page) */
 .a11y-site-aside {
   color: #fff;

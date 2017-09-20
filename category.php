@@ -12,7 +12,7 @@
  *        value: true
  * 4. Assign the post to the category it's supposed to be a landing page for.
  *
- * @package a11y
+ * @package big-idea
  */
 $category_name = '';
 $category_landing_id = '';

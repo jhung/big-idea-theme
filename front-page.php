@@ -1,6 +1,6 @@
 <?php
 /**
- * @package a11y
+ * @package big-idea
  */
 
 $settings = (array) get_option ('a11y-theme-settings');
@@ -51,6 +51,46 @@ get_header(); ?>
             ?>
         </section>
 
+        <section class="row a11y-panel-container bi-social-feeds">
+            <article class="small-12 medium-4 columns a11y-front-panel">
+                <header class="a11y-entry-header">
+                    <h1>Instagram</h1>
+                </header>
+                <section>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Integer dictum lacinia rhoncus. Morbi faucibus faucibus lacinia.
+                        Duis et semper ante, vel mollis lectus.
+
+                        <a href="#">Maecenas nisl enim</a>, tempus in venenatis quis, fermentum sed dolor.
+                </section>
+            </article>
+            <article class="small-12 medium-4 columns a11y-front-panel">
+                <header class="a11y-entry-header">
+                    <h1>Twitter</h1>
+                </header>
+                <section>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Integer dictum lacinia rhoncus. Morbi faucibus faucibus lacinia.
+                        Duis et semper ante, vel mollis lectus.
+
+                        <a href="#">Maecenas nisl enim</a>, tempus in venenatis quis, fermentum sed dolor.
+                </section>
+
+            </article>
+            <article class="small-12 medium-4 columns a11y-front-panel">
+                <header class="a11y-entry-header">
+                    <h1>Facebook</h1>
+                </header>
+                <section>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Integer dictum lacinia rhoncus. Morbi faucibus faucibus lacinia.
+                        Duis et semper ante, vel mollis lectus.
+
+                        <a href="#">Maecenas nisl enim</a>, tempus in venenatis quis, fermentum sed dolor.
+                </section>
+
+            </article>
+        </section>
     </main>
 
 <?php

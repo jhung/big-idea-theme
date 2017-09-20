@@ -1,7 +1,7 @@
 <?php
 /**
  * a11y functions and definitions
- * @package a11y
+ * @package big-idea
  */
 
 if ( ! function_exists( 'a11y_setup' ) ) :
