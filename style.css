@@ -1,11 +1,11 @@
 /*
-Theme Name: a11y-0.0.3
+Theme Name: big-idea-theme
 Theme URI:
 Author: Floe Project
 Author URI: http://floeproject.org/
-Description: Accessible theme <code>a11y</code>
+Description: Accessible child theme for BIG IDeA
 Template:     wp-a11y-theme
-Version: 0.0.3
+Version: 0.0.1
 License:
 License URI:
 Text Domain: a11y
@@ -28,4 +28,3 @@ span.fa {
 .bi-social-feeds .a11y-front-panel:hover {
   border-color: #eceded;
 }
-
