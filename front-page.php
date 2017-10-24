@@ -54,27 +54,45 @@ get_header(); ?>
         <section class="row a11y-panel-container bi-social-feeds">
             <article class="small-12 medium-4 columns a11y-front-panel">
                 <header class="a11y-entry-header">
-                    <h1>Social Media Feed 1</h1>
+                    <h1>Twitter</h1>
                 </header>
                 <section>
                     <!-- Social Media Feed goes here -->
+                    <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/bigideaproj" data-widget-id="291966757638377473" data-tweet-limit="2" data-chrome="nofooter, noheader"   data-aria-polite="polite"></a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                 </section>
             </article>
             <article class="small-12 medium-4 columns a11y-front-panel">
                 <header class="a11y-entry-header">
-                    <h1>Social Media Feed 2</h1>
+                    <h1>Facebook</h1>
                 </header>
                 <section>
                     <!-- Social Media Feed goes here -->
+                    <!-- Facebook JS content -->
+                    <div id="fb-root"></div>
+                    <script>(function(d, s, id) {
+                      var js, fjs = d.getElementsByTagName(s)[0];
+                      if (d.getElementById(id)) return;
+                      js = d.createElement(s); js.id = id;
+                      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10";
+                      fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));
+                    </script>
+
+                   <!-- End Facebook JS content -->
+
+                  <div class="fb-page" data-href="https://www.facebook.com/bigideaproj" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"
+><blockquote cite="https://www.facebook.com/bigideaproj" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/bigideaproj"></a></blockquote></div>
                 </section>
 
             </article>
             <article class="small-12 medium-4 columns a11y-front-panel">
                 <header class="a11y-entry-header">
-                    <h1>Social Media Feed 3</h1>
+                    <h1>Instagram</h1>
                 </header>
                 <section>
                     <!-- Social Media Feed goes here -->
+               <?php echo do_shortcode("[instagram-feed]"); ?>
                 </section>
 
             </article>
