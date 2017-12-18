@@ -1,0 +1,92 @@
+
+/**
+ * Login and Registration styles.
+ */
+
+.login, .login #backtoblog, .login #nav {
+    font-size: 16px;
+}
+
+ /* Put the BIG IDeA logo on the Login / Registration page. */
+.login h1 a {
+    background-image: url("images/logo-COLOUR.svg");
+    height: 110px;
+}
+
+/* When doing Login action, show the Login message, and hide the rest. */
+.login-action-login {
+    .bi-login-message {
+        display: block;
+        visibility: visible;
+    }
+
+    .bi-register-message, .bi-reset-message, .bi-reset-success {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+/* When doing Register action, show the register message, and hide the rest. */
+.login-action-register {
+    .bi-register-message {
+        display: block;
+        visibility: visible;
+
+        box-shadow: 0 1px 3px rgba(0,0,0,.13);
+        background-color: #fff;
+    }
+
+    .bi-login-message, .bi-reset-message, .bi-reset-success {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+/* When doing Reset action, show the Reset message, and hide the rest. */
+.login-action-lostpassword, .login-action-rp {
+    .bi-reset-message {
+        display: block;
+        visibility: visible;
+    }
+
+    .bi-register-message, .bi-login-message, .bi-reset-success {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+/* When finishing reset action, show the Reset Success message, and hide the rest. */
+.login-action-resetpass {
+    .bi-reset-success {
+        display: block;
+        visibility: visible;
+    }
+
+    .bi-register-message, .bi-login-message, .bi-reset-message {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+/* Change the default Login link colours to black for higher contrast */
+.login label, .login #backtoblog, .login #nav {
+    color: #000;
+}
+
+/* Increase the size of the Register page and submit button */
+.login-action-register #login {
+    width: 80%;
+    max-width: 35rem;
+
+    input {
+        width: 100%;
+    }
+}
+
+/* Register page styling */
+.bi-register-message {
+    padding: 1rem;
+    p {
+        margin-top: 1rem;
+    }
+}

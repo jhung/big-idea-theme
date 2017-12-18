@@ -52,18 +52,7 @@
                         <div class="top-bar-left a11y-main-nav-items">
                             <ul class="dropdown menu" data-dropdown-menu>
                                 <li class="show-for-small-only"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Home</a></li>
-                                <?php echo $nav_menu;
-                                /*
-                                Check that the Feedback Post plugin is installed.
-                                If it is, then display a link to the Feedback Post
-                                archive if the user has privledges to view it.
-                                */
-                                if (function_exists ('is_feedback_post_role')) {
-                                    if (is_feedback_post_role(wp_get_current_user())) {
-                                        echo '<li>'.get_feedback_post_archive_link().'</li>';
-                                    }
-                                }
-                                ?>
+                                <?php echo $nav_menu; ?>
                             </ul>
                         </div>
                     </div>

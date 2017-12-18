@@ -15,6 +15,8 @@ This theme is still under development.
 * [Facebook Feed WD](https://wordpress.org/plugins/wd-facebook-feed/)
 * [Instagram Feed](https://wordpress.org/plugins/instagram-feed/)
 * [Feedback Post Plugin](https://github.com/jhung/feedback-post-plugin/tree/v0-0-1) (still in development)
+* [Font Awesome 4 Menu Plugin](https://wordpress.org/plugins/font-awesome-4-menus/)
+* [Cimy User Extra Fields](https://wordpress.org/plugins/cimy-user-extra-fields/)
 
 # Installation
 
