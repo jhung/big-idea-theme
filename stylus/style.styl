@@ -47,3 +47,46 @@ main {
     padding: 1rem 0.5rem;
     display: inline-block;
 }
+
+/* Feedback form styling */
+.feedback-post-form textarea:focus,
+.feedback-post-form select:focus,
+.feedback-post-form input:focus {
+    outline: 0.2rem solid #000;
+}
+
+/* Contrast theme styling */
+.fl-theme-wb {
+    .feedback-post-form textarea:focus,
+    .feedback-post-form select:focus,
+    .feedback-post-form input:focus {
+        outline: 0.2rem solid #fff;
+    }
+}
+
+.fl-theme-yb {
+    .feedback-post-form textarea:focus,
+    .feedback-post-form select:focus,
+    .feedback-post-form input:focus {
+        outline: 0.2rem solid #ff0;
+    }
+}
+
+.fl-theme-lgdg {
+    .feedback-post-form textarea:focus,
+    .feedback-post-form select:focus,
+    .feedback-post-form input:focus {
+        outline: 0.2rem solid #bdbdbb;
+    }
+}
+
+.fl-theme-by, .fl-theme-yb, .fl-theme-bw, .fl-theme-wb, .fl-theme-lgdg {
+    .feedback-post-submit {
+        border-style:solid;
+    }
+}
+
+/* Overriding Foundation to work with UIO */
+label, p {
+    line-height:inherit;
+}

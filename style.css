@@ -37,3 +37,37 @@ main {
   padding: 1rem 0.5rem;
   display: inline-block;
 }
+/* Feedback form styling */
+.feedback-post-form textarea:focus,
+.feedback-post-form select:focus,
+.feedback-post-form input:focus {
+  outline: 0.2rem solid #000;
+}
+/* Contrast theme styling */
+.fl-theme-wb .feedback-post-form textarea:focus,
+.fl-theme-wb .feedback-post-form select:focus,
+.fl-theme-wb .feedback-post-form input:focus {
+  outline: 0.2rem solid #fff;
+}
+.fl-theme-yb .feedback-post-form textarea:focus,
+.fl-theme-yb .feedback-post-form select:focus,
+.fl-theme-yb .feedback-post-form input:focus {
+  outline: 0.2rem solid #ff0;
+}
+.fl-theme-lgdg .feedback-post-form textarea:focus,
+.fl-theme-lgdg .feedback-post-form select:focus,
+.fl-theme-lgdg .feedback-post-form input:focus {
+  outline: 0.2rem solid #bdbdbb;
+}
+.fl-theme-by .feedback-post-submit,
+.fl-theme-yb .feedback-post-submit,
+.fl-theme-bw .feedback-post-submit,
+.fl-theme-wb .feedback-post-submit,
+.fl-theme-lgdg .feedback-post-submit {
+  border-style: solid;
+}
+/* Overriding Foundation to work with UIO */
+label,
+p {
+  line-height: inherit;
+}
