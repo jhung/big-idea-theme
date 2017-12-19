@@ -13,7 +13,6 @@ define('REGISTER_MESSAGE', '
 ');
 define('RESET_MESSAGE', '<h2>Reset Your BIG IDeA Password</h2>');
 define('RESET_SUCCESS', '<h2>Password Successfully Set</h2>');
-define('CUSTOMER_FEEDBACK_LINK', 'Give Us Feedback');
 define('BUSINESS_LOGIN_LINK', 'Login');
 define('BUSINESS_LOGOUT_LINK', 'Logout');
 define('LOGIN_LOGO_LINK', 'BIG IDeA Home');
