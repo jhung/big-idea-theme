@@ -17,4 +17,5 @@ define('BUSINESS_LOGIN_LINK', 'Login');
 define('BUSINESS_LOGOUT_LINK', 'Logout');
 define('LOGIN_LOGO_LINK', 'BIG IDeA Home');
 define('BUSINESS_REGISTER_LINK', 'Register');
+define('FEEDBACK_LINK', 'Your Feedback')
 ?>

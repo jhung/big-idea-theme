@@ -82,3 +82,8 @@
 .bi-register-message p {
   margin-top: 1rem;
 }
+/* Override the Cimy plugin fixed width */
+.login-action-register #login #registerform {
+  width: 100% !important;
+  box-sizing: border-box;
+}

@@ -18,7 +18,7 @@
             If user is a business subscriber and is logged in, then show a link
             to their feedback and the logout link.
             */
-            $output .= '<li>'.get_feedback_post_archive_link().'</li>';
+            $output .= '<li>'.get_feedback_post_archive_link(FEEDBACK_LINK).'</li>';
             $output .= '<li><a href="'.wp_logout_url( home_url() ).'">'.BUSINESS_LOGOUT_LINK.'</a></li>';
         } else if  (!is_user_logged_in()) {
             /*
