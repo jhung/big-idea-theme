@@ -19,6 +19,7 @@
             to their feedback and the logout link.
             */
             $output .= '<li>'.get_feedback_post_archive_link(FEEDBACK_LINK).'</li>';
+            $output .= '<li><a href="/submit-a-design-challenge/">Submit an Accessibility Challenge</a></li>';
             $output .= '<li><a href="'.wp_logout_url( home_url() ).'">'.BUSINESS_LOGOUT_LINK.'</a></li>';
         } else if  (!is_user_logged_in()) {
             /*
