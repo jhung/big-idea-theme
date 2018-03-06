@@ -1,0 +1,305 @@
+// General colours
+header-color = #7A2344;
+body-background = #fff;
+corner-flourish-color = #AD3362;
+
+// Masthead styles
+masthead-background = #fff;
+masthead-color = #00303C;
+masthead-color-hover = #fff;
+masthead-background-hover = #00303C;
+masthead-border = 0.8rem solid #0C303B;
+
+// Navigation styles
+main-nav-link-color = #00303C;
+main-nav-link-color-hover = #fff;
+main-nav-link-background-hover = #00303C;
+main-nav-link-focus = 0.2rem solid #00303C;
+
+// Sidebar styles
+sidebar-color = #fff;
+sidebar-background = #006274;
+sidebar-link-color = #fff;
+sidebar-link-background-hover = #fff;
+sidebar-link-color-hover = #006274;
+sidebar-link-focus = 0.2rem solid #fff;
+
+// Front Page Main Content Area styles
+front-main-content-link-color = #006274;
+front-main-content-link-hover-background = #006274;
+front-main-content-link-hover = #fff;
+front-main-content-link-focus = 0.2rem solid #006274;
+
+// Main Content Area for all other pages
+main-content-border = 1.6rem solid #ECEDED;
+main-content-background = #fff;
+main-content-color = #000;
+main-content-link-color = #AD3362;
+
+// Front Page Panels
+front-panel-container-background = #ECEDED;
+front-panel-background = #fff;
+
+// Skip Links
+skip-color = #006274;
+skip-background = #ECEDED;
+skip-focus-outer-border = #006274;
+skip-focus-inner-border = #ECEDED;
+skip-hover-color = #ECEDED;
+skip-hover-background = #006274;
+
+// Front Page Footer
+front-footer-background = #006274;
+front-footer-color = #fff;
+front-footer-link-color = #fff;
+front-footer-link-hover-background = #fff;
+front-footer-link-hover = #006274;
+front-footer-link-focus = 0.2rem solid #fff;
+
+// Sub Page Footer
+footer-background = #00303C;
+footer-color = #fff;
+footer-link-color = #fff;
+footer-link-hover-background = #fff;
+footer-link-hover = #00303C;
+footer-link-focus = 0.2rem solid #fff;
+
+// Site description
+site-tagline-color = #fff;
+site-tagline-background-color = #274D5D;
+site-tagline-emphasis = #FCC076;
+
+/* General styles */
+.a11y-theme {
+    background-color: body-background;
+
+    h1, h2, h3 {
+        color: header-color;
+    }
+}
+
+/* Skip links */
+#skip a {
+    color: skip-color;
+    background: skip-background;
+
+    &, &:hover, &:visited {
+        color: skip-hover-color;
+        background: skip-hover-background;
+    }
+
+    &:active, &:focus {
+        border: 0.5rem solid skip-focus-inner-border;
+        outline: 0.2rem solid skip-focus-outer-border;
+        color: skip-hover-color;
+        background: skip-hover-background;
+    }
+}
+
+/* UI Options. */
+.fl-prefsEditor-separatedPanel .fl-panelBar {
+    button:focus {
+        outline: 0.2rem solid #000;
+    }
+}
+
+/* Site Header */
+.a11y-site-header {
+    background-color: masthead-background;
+
+    .a11y-site-title a {
+        color: masthead-color;
+
+        &:hover {
+            background-color: masthead-background-hover;
+            color: masthead-color-hover;
+        }
+
+        &:focus {
+            outline: main-nav-link-focus;
+        }
+    }
+}
+
+.a11y-main-nav {
+    .title-bar {
+        background-color: inherit;
+    }
+
+    .menu-icon:focus {
+        outline: main-nav-link-focus;
+    }
+}
+
+/* Shared navigation styles for all screen sizes. */
+.a11y-main-nav-items {
+    a {
+        color: main-nav-link-color;
+
+        &:hover {
+            background-color: main-nav-link-background-hover;
+            color: main-nav-link-color-hover;
+        }
+
+        &:focus {
+            outline: main-nav-link-focus;
+        }
+    }
+}
+
+/* Navigation for medium screens and larger. */
+@media screen and (min-width: 40em) {
+    .a11y-main-nav-items .menu-item {
+        border-right: 0.1rem solid masthead-color;
+    }
+}
+
+/* Main - Front Page */
+.home .a11y-site-main {
+    background-color: front-main-content-background;
+}
+
+/* Main - All other pages. */
+.category, .single {
+    main {
+        background: main-content-background;
+        a {
+            color: main-content-link-color;
+        }
+    }
+}
+
+/* Site Tagline (appears on front page only) */
+.a11y-site-tagline {
+    background: site-tagline-background-color;
+    text-shadow: 0.1rem 0.1rem #1a1a1a;
+    color: site-tagline-color;
+}
+
+.a11y-tagline-emphasis {
+    color: site-tagline-emphasis;
+}
+
+/* The Three Panels that appear on the front page. */
+.a11y-panel-container {
+    background-color: front-panel-container-background;
+}
+
+.a11y-front-panel {
+    background-color: front-panel-background;
+    border: 1rem solid front-panel-container-background;
+    color: inherit;
+
+    &:focus, &:hover {
+        color: inherit;
+        border-color: front-main-content-link-color;
+    }
+}
+
+/* Site Sidebar (appears on all other pages, except front page) */
+.a11y-site-aside {
+    color: sidebar-color;
+    background: sidebar-background;
+
+    a {
+        color: sidebar-link-color;
+
+        &:hover {
+            background-color: sidebar-link-background-hover;
+            color: sidebar-link-color-hover;
+        }
+
+        &:focus {
+            outline: sidebar-link-focus;
+            color: sidebar-link-color;
+        }
+
+        &:focus:hover {
+            background-color: sidebar-link-background-hover;
+            color: sidebar-link-color-hover;
+        }
+    }
+
+    h1, h2, h3 {
+        color: sidebar-color;
+    }
+}
+
+/* Main Content Area Styles */
+.a11y-site-main article {
+    blockquote {
+        color: main-content-color;
+        border-left: 0.2rem solid #000;
+    }
+}
+
+/* Footer */
+.a11y-site-footer {
+    background-color: footer-background;
+    color: footer-color;
+
+    a {
+        color: footer-link-color;
+        &:hover {
+            background-color: footer-link-hover-background
+            color: footer-link-hover;
+        }
+
+        &:focus {
+            outline: footer-link-focus;
+            color: footer-link-color; // override Foundation style.
+        }
+    }
+}
+
+/* Footer styles for the home page only. */
+.home .a11y-site-footer {
+    background-color: front-footer-background;
+
+    a{
+        &:hover {
+            background-color: front-footer-link-hover-background
+            color: front-footer-link-hover;
+        }
+
+        &:focus {
+            outline: front-footer-link-focus;
+        }
+    }
+}
+
+
+/* Styles for Medium resolution and larger */
+@media screen and (min-width: 40em) {
+      #corner-flourish {
+          fill: corner-flourish-color;
+      }
+
+     .a11y-site-header {
+         border-bottom: masthead-border;
+     }
+
+      .a11y-site-aside {
+          background-image: url("./images/sidebar-graphic-COLOUR-01.svg");
+      }
+
+      .a11y-site-footer {
+          background-image: url("./images/sidebar-graphic-COLOUR-02.svg");
+      }
+
+      .single .a11y-site-main, .category .a11y-site-main {
+          border-top: main-content-border;
+          border-left: main-content-border;
+          border-right: main-content-border;
+      }
+}
+
+
+/* Large screens and bigger */
+@media screen and (min-width: 64em) {
+      .a11y-site-tagline {
+          background: url("./images/logo-COLOUR.svg") no-repeat,
+                      url(site-tagline-background-image) no-repeat,
+                      #274D5D;
+      }
+}

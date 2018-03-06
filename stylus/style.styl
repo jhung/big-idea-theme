@@ -12,7 +12,31 @@ Text Domain: a11y
 Tags: accessibility
 */
 
-footer-background ?= #006274;
+@import "customization";
+
+site-tagline-background-image = "./images/tagline-background.png";
+
+/* Customize the Site Tagline */
+.a11y-site-tagline {
+    background: url(site-tagline-background-image) 0 -3rem/100% auto no-repeat, site-tagline-background-color;
+}
+
+/* Header */
+.a11y-site-title a {
+    background: url("./images/logo-COLOUR.svg") right -0.1rem/5.5rem 4rem no-repeat;
+    width: 12rem;
+    height: 4.5rem;
+
+}
+
+/* Footer */
+#ontario-logo {
+    width: 8rem;
+    fill: #fff;
+    margin: 0 auto;
+    display: block;
+    height: 2.2rem;
+}
 
 /* Styles specific for Font Awesome */
 span.fa {
@@ -90,3 +114,9 @@ main {
 label, p {
     line-height:inherit;
 }
+
+/* Contrast Styles */
+@import "contrast";
+
+/* Login and Registration Styles */
+@import "login";
